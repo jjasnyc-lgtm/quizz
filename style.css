@@ -149,3 +149,8 @@ body {
 .grid {
   display: grid;
   grid-template
+/* Make the image responsive */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
