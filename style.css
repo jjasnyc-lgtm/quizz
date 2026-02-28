@@ -6,23 +6,42 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-color: #fafafa;
+  color: #333;
 }
 
 /* Header */
 .header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 .nav ul {
@@ -41,7 +60,7 @@ body {
 }
 
 .nav a:hover {
-  color: #ff9900; /* Hover color */
+  color: #ff9900;
 }
 
 /* Mobile Header - Stack the navigation */
@@ -129,50 +148,4 @@ body {
 /* Grid Section */
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.card {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Tablet Breakpoint - 2 columns */
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile Breakpoint - 1 column */
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Button Hover Effect */
-.btn {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.1em;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #ff9900;
-}
-
-/* Card Hover Effect */
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  grid-template
