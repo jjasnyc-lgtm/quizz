@@ -7,21 +7,32 @@
   <meta name="description" content="A portfolio showcasing design and data projects. A clean, responsive layout built without frameworks." />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Adding Favicon -->
+  <link rel="icon" href="images/dog-logo.png" type="image/png" />
+  <!-- Adding Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header Section -->
   <header class="header">
-    <div class="logo">
-      <a href="index.html" title="Go to Home">My Portfolio</a>
+    <!-- Logo and Navigation -->
+    <div class="header-content">
+      <div class="logo">
+        <a href="index.html" title="Go to Home">
+          <!-- Dog Logo -->
+          <img src="images/dog-logo.png" alt="Dog Logo" class="logo-img" />
+          <span class="logo-text">My Portfolio</span>
+        </a>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="gallery.html" title="View Gallery">Gallery</a></li>
+          <li><a href="contact.html" title="Contact Me">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="gallery.html" title="View Gallery">Gallery</a></li>
-        <li><a href="contact.html" title="Contact Me">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!-- Main Content Area -->
@@ -41,20 +52,20 @@
 
     <!-- Grid Section -->
     <section class="grid">
-      <div class="card" role="article">
-        <h3>Card 1</h3>
+      <div class="card" role="article" aria-labelledby="card1">
+        <h3 id="card1">Card 1</h3>
         <p>This is a sample card with some information about the project.</p>
       </div>
-      <div class="card" role="article">
-        <h3>Card 2</h3>
+      <div class="card" role="article" aria-labelledby="card2">
+        <h3 id="card2">Card 2</h3>
         <p>This is a sample card with some information about the project.</p>
       </div>
-      <div class="card" role="article">
-        <h3>Card 3</h3>
+      <div class="card" role="article" aria-labelledby="card3">
+        <h3 id="card3">Card 3</h3>
         <p>This is a sample card with some information about the project.</p>
       </div>
-      <div class="card" role="article">
-        <h3>Card 4</h3>
+      <div class="card" role="article" aria-labelledby="card4">
+        <h3 id="card4">Card 4</h3>
         <p>This is a sample card with some information about the project.</p>
       </div>
     </section>
@@ -63,7 +74,20 @@
   <!-- Footer Section -->
   <footer class="footer">
     <p>&copy; 2026 <a href="index.html" title="Go to Home">My Portfolio</a>. All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://twitter.com" title="Twitter"><img src="images/twitter-icon.png" alt="Twitter" /></a></li>
+      <li><a href="https://linkedin.com" title="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a></li>
+      <li><a href="https://github.com" title="GitHub"><img src="images/github-icon.png" alt="GitHub" /></a></li>
+    </ul>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <!-- Optional: Include external JavaScript for extra interactivity -->
+  <script src="script.js"></script>
 </body>
 
 </html>
